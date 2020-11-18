@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<h2>Gerar posts aleatórios</h2>
+<form method="POST">
+    {% csrf_token %}
+    <table>
+        {{ form }}
+    </table>
+    <button type="submit">Gerar!</button>
+</form>
+{% endblock %}

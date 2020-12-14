@@ -69,3 +69,20 @@ h1, h2, h3, h4 {
     font-size: 26pt;
     margin-right: 20px;
 }
+
+.todotable {
+	max-width: 500px;
+}
+
+.tododone {
+	text-decoration: line-through;
+	color: #999;
+}
+
+.todocheck {
+	width: 15px;
+}
+
+.todoremove {
+	width: 35px;
+}

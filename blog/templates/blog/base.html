@@ -6,6 +6,11 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <script
+  src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+        <script src="{% static 'javascript/todo.js' %}"></script>
     </head>
 <body>
     <div class="page-header">
@@ -24,7 +29,14 @@
             {% endblock %}
             </div>
             <div class="col-md-4">
-                do lado
+                 <div>
+        <div>
+          <label>Nova tarefa:</label>
+          <input type="text" id="newtask">
+        </div>
+        <table class="table table-striped table-bordered todotable" id="todotable">
+        </table>
+      </div>
             </div>
         </div>
     </div>
